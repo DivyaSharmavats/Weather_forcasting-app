@@ -1,0 +1,99 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background: #222;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background:linear-gradient(135deg,#00feba,#5b548a);
+    color: #fff;
+    margin: 80px auto 0;
+    border-radius: 20px;
+    text-align: center;
+    padding:20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border-radius: 20px;
+    background: #ebffce;
+    font-size: 20px;
+    color: #555;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 16px;
+    padding: 10px 25px;
+    border: 0;
+    outline: 0;
+    flex: 1;
+}
+.search input:hover::placeholder {
+    color: rgb(144, 93, 239); /* Change placeholder text color on hover */
+    font-weight: bold; /* Make placeholder text bold on hover */
+}
+.search button{ 
+    border-radius: 50px;
+    background: #ebffce;
+    height: 60px;
+    width: 60px;
+    /* margin-right: 80px; */
+    border: 0;
+    font-size: 18px;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /*smooth transition efect*/
+}  
+.search button:hover {
+    background-color: #1fa1f8; /* Change background color on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+
+.search button img{
+    width: 20px;
+} 
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather-icon h1{
+    font-size:90px ;
+    font-weight: 500;
+}
+.weather-icon h2{
+    font-size:45px ;
+    font-weight: 400;
+    margin-top:-10px ;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.col img{
+    width: 40px;
+}
+.humidity, .wind{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.weather{
+    display: none;
+}
+.error{
+    font-size:20px ;
+    color: #222;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+
+}
